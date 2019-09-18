@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07BB3BBD2510EDB7431D202D /* libPods-RajaTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 414848D188112C0FBE50095A /* libPods-RajaTalk.a */; };
+		C314DAB2225F8F66008CB313 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C314DAB1225F8F65008CB313 /* GoogleService-Info.plist */; };
+		C36D52DF2101393B00281A45 /* icon_call.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52D52101393A00281A45 /* icon_call.png */; };
+		C36D52E02101393B00281A45 /* icon_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52D62101393A00281A45 /* icon_delete.png */; };
+		C36D52E12101393B00281A45 /* icon_password.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52D72101393A00281A45 /* icon_password.png */; };
+		C36D52E22101393B00281A45 /* icon_unfavourite.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52D82101393A00281A45 /* icon_unfavourite.png */; };
+		C36D52E32101393B00281A45 /* icon_contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52D92101393A00281A45 /* icon_contacts.png */; };
+		C36D52E42101393B00281A45 /* icon_favourite.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52DA2101393A00281A45 /* icon_favourite.png */; };
+		C36D52E52101393B00281A45 /* icon_no_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52DB2101393A00281A45 /* icon_no_avatar.png */; };
+		C36D52E62101393B00281A45 /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52DC2101393A00281A45 /* icon_user.png */; };
+		C36D52E72101393B00281A45 /* icon_check_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52DD2101393A00281A45 /* icon_check_mark.png */; };
+		C36D52E82101393B00281A45 /* icon_recall.png in Resources */ = {isa = PBXBuildFile; fileRef = C36D52DE2101393B00281A45 /* icon_recall.png */; };
+		C36D52ED21013FAB00281A45 /* UIColor+RajaTalk.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52EB21013FAB00281A45 /* UIColor+RajaTalk.m */; };
+		C36D52F02101426C00281A45 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52EF2101426C00281A45 /* SignUpViewController.m */; };
+		C36D52F32101429300281A45 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52F12101429300281A45 /* LoginViewController.m */; };
+		C36D53202101518D00281A45 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52F92101518C00281A45 /* AFHTTPRequestOperation.m */; };
+		C36D53212101518D00281A45 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52FB2101518C00281A45 /* AFHTTPRequestOperationManager.m */; };
+		C36D53222101518D00281A45 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D52FD2101518C00281A45 /* AFHTTPSessionManager.m */; };
+		C36D53232101518D00281A45 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53002101518C00281A45 /* AFNetworkReachabilityManager.m */; };
+		C36D53242101518D00281A45 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53022101518C00281A45 /* AFSecurityPolicy.m */; };
+		C36D53252101518D00281A45 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53042101518C00281A45 /* AFURLConnectionOperation.m */; };
+		C36D53262101518D00281A45 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53062101518C00281A45 /* AFURLRequestSerialization.m */; };
+		C36D53272101518D00281A45 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53082101518C00281A45 /* AFURLResponseSerialization.m */; };
+		C36D53282101518D00281A45 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D530A2101518C00281A45 /* AFURLSessionManager.m */; };
+		C36D53292101518D00281A45 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C36D530B2101518C00281A45 /* LICENSE */; };
+		C36D532A2101518D00281A45 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C36D530C2101518C00281A45 /* README.md */; };
+		C36D532B2101518D00281A45 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D530F2101518C00281A45 /* AFNetworkActivityIndicatorManager.m */; };
+		C36D532C2101518D00281A45 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53112101518C00281A45 /* UIActivityIndicatorView+AFNetworking.m */; };
+		C36D532D2101518D00281A45 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53132101518C00281A45 /* UIAlertView+AFNetworking.m */; };
+		C36D532E2101518D00281A45 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53152101518C00281A45 /* UIButton+AFNetworking.m */; };
+		C36D532F2101518D00281A45 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D53182101518C00281A45 /* UIImageView+AFNetworking.m */; };
+		C36D53302101518D00281A45 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D531B2101518C00281A45 /* UIProgressView+AFNetworking.m */; };
+		C36D53312101518D00281A45 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D531D2101518C00281A45 /* UIRefreshControl+AFNetworking.m */; };
+		C36D53322101518D00281A45 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D531F2101518C00281A45 /* UIWebView+AFNetworking.m */; };
+		C38C16782101355F0050C3F2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C38C16772101355F0050C3F2 /* Util.m */; };
+		C3A24A742273ADD200D0BBBC /* rajatalk_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3A24A732273ADD200D0BBBC /* rajatalk_logo.png */; };
+		C3A7D5B32101CC5900C2BA9E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5B22101CC5900C2BA9E /* BaseViewController.m */; };
+		C3A7D5B62101E2CF00C2BA9E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5B52101E2CF00C2BA9E /* MainViewController.m */; };
+		C3A7D5E62102737C00C2BA9E /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5E52102737C00C2BA9E /* CallViewController.m */; };
+		C3A7D5E9210274D100C2BA9E /* CallHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5E8210274D100C2BA9E /* CallHistoryViewController.m */; };
+		C3A7D5EC210274E900C2BA9E /* TopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5EB210274E900C2BA9E /* TopupViewController.m */; };
+		C3A7D5F8210275C800C2BA9E /* CarbonSwipeRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5F0210275C800C2BA9E /* CarbonSwipeRefresh.m */; };
+		C3A7D5F9210275C800C2BA9E /* CarbonTabSwipeNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5F2210275C800C2BA9E /* CarbonTabSwipeNavigation.m */; };
+		C3A7D5FA210275C800C2BA9E /* CarbonTabSwipeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5F4210275C800C2BA9E /* CarbonTabSwipeScrollView.m */; };
+		C3A7D5FB210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A7D5F6210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.m */; };
+		C3A7D5FC210275C800C2BA9E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A7D5F7210275C800C2BA9E /* Info.plist */; };
+		C3BD6211213DD33E00964F1E /* Call2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD6210213DD33E00964F1E /* Call2ViewController.m */; };
+		C3BD6214213DDAB200964F1E /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD6213213DDAB200964F1E /* ResetPasswordViewController.m */; };
+		C3BD6217213DF1AA00964F1E /* LocalAccessNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD6216213DF1AA00964F1E /* LocalAccessNumberViewController.m */; };
+		C3BD621C213E0AD800964F1E /* LocalAccessNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BD621B213E0AD800964F1E /* LocalAccessNumberTableViewCell.m */; };
+		C3C795D32270A149003F4A9A /* CallHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C795D22270A149003F4A9A /* CallHistoryTableViewCell.m */; };
+		C3C795D62270A376003F4A9A /* CallRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C795D52270A376003F4A9A /* CallRecord.m */; };
+		C3D8723920EFB47B0059EC78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8723820EFB47B0059EC78 /* AppDelegate.m */; };
+		C3D8723F20EFB47B0059EC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8723D20EFB47B0059EC78 /* Main.storyboard */; };
+		C3D8724220EFB47B0059EC78 /* RajaTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3D8724020EFB47B0059EC78 /* RajaTalk.xcdatamodeld */; };
+		C3D8724420EFB47E0059EC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D8724320EFB47E0059EC78 /* Assets.xcassets */; };
+		C3D8724720EFB47E0059EC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8724520EFB47E0059EC78 /* LaunchScreen.storyboard */; };
+		C3D8724A20EFB47E0059EC78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8724920EFB47E0059EC78 /* main.m */; };
+		C3D8DB0221050D8600C32A08 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8DB0121050D8600C32A08 /* Account.m */; };
+		C3D8DB0421052CC600C32A08 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D8DB0321052CC600C32A08 /* AddressBookUI.framework */; };
+		C3D8DB0621052CD300C32A08 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D8DB0521052CD300C32A08 /* AddressBook.framework */; };
+		C3D8DB0A21055ED700C32A08 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8DB0921055ED700C32A08 /* ContactsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		414848D188112C0FBE50095A /* libPods-RajaTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RajaTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C314DAB1225F8F65008CB313 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C33CD3EE2267F8F600A080A0 /* RajaTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RajaTalk.entitlements; sourceTree = "<group>"; };
+		C36D52D52101393A00281A45 /* icon_call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_call.png; path = Resources/Icon/icon_call.png; sourceTree = "<group>"; };
+		C36D52D62101393A00281A45 /* icon_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_delete.png; path = Resources/Icon/icon_delete.png; sourceTree = "<group>"; };
+		C36D52D72101393A00281A45 /* icon_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_password.png; path = Resources/Icon/icon_password.png; sourceTree = "<group>"; };
+		C36D52D82101393A00281A45 /* icon_unfavourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_unfavourite.png; path = Resources/Icon/icon_unfavourite.png; sourceTree = "<group>"; };
+		C36D52D92101393A00281A45 /* icon_contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_contacts.png; path = Resources/Icon/icon_contacts.png; sourceTree = "<group>"; };
+		C36D52DA2101393A00281A45 /* icon_favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_favourite.png; path = Resources/Icon/icon_favourite.png; sourceTree = "<group>"; };
+		C36D52DB2101393A00281A45 /* icon_no_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_no_avatar.png; path = Resources/Icon/icon_no_avatar.png; sourceTree = "<group>"; };
+		C36D52DC2101393A00281A45 /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = Resources/Icon/icon_user.png; sourceTree = "<group>"; };
+		C36D52DD2101393A00281A45 /* icon_check_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_check_mark.png; path = Resources/Icon/icon_check_mark.png; sourceTree = "<group>"; };
+		C36D52DE2101393B00281A45 /* icon_recall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_recall.png; path = Resources/Icon/icon_recall.png; sourceTree = "<group>"; };
+		C36D52EB21013FAB00281A45 /* UIColor+RajaTalk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RajaTalk.m"; path = "Classes/Categories/UIColor+RajaTalk.m"; sourceTree = "<group>"; };
+		C36D52EC21013FAB00281A45 /* UIColor+RajaTalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+RajaTalk.h"; path = "Classes/Categories/UIColor+RajaTalk.h"; sourceTree = "<group>"; };
+		C36D52EE2101426C00281A45 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = Classes/VC/SignUpViewController.h; sourceTree = "<group>"; };
+		C36D52EF2101426C00281A45 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = Classes/VC/SignUpViewController.m; sourceTree = "<group>"; };
+		C36D52F12101429300281A45 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/VC/LoginViewController.m; sourceTree = "<group>"; };
+		C36D52F22101429300281A45 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/VC/LoginViewController.h; sourceTree = "<group>"; };
+		C36D52F82101518C00281A45 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C36D52F92101518C00281A45 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		C36D52FA2101518C00281A45 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C36D52FB2101518C00281A45 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C36D52FC2101518C00281A45 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C36D52FD2101518C00281A45 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C36D52FE2101518C00281A45 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		C36D52FF2101518C00281A45 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C36D53002101518C00281A45 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C36D53012101518C00281A45 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C36D53022101518C00281A45 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C36D53032101518C00281A45 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C36D53042101518C00281A45 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C36D53052101518C00281A45 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		C36D53062101518C00281A45 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C36D53072101518C00281A45 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		C36D53082101518C00281A45 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C36D53092101518C00281A45 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		C36D530A2101518C00281A45 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C36D530B2101518C00281A45 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C36D530C2101518C00281A45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C36D530E2101518C00281A45 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		C36D530F2101518C00281A45 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		C36D53102101518C00281A45 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D53112101518C00281A45 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D53122101518C00281A45 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D53132101518C00281A45 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D53142101518C00281A45 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D53152101518C00281A45 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D53162101518C00281A45 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D53172101518C00281A45 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D53182101518C00281A45 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D53192101518C00281A45 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D531A2101518C00281A45 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D531B2101518C00281A45 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D531C2101518C00281A45 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D531D2101518C00281A45 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		C36D531E2101518C00281A45 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		C36D531F2101518C00281A45 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		C38C16762101355F0050C3F2 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Util.h; path = Classes/Util/Util.h; sourceTree = "<group>"; };
+		C38C16772101355F0050C3F2 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = Classes/Util/Util.m; sourceTree = "<group>"; };
+		C3A24A732273ADD200D0BBBC /* rajatalk_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rajatalk_logo.png; path = Resources/Icon/rajatalk_logo.png; sourceTree = "<group>"; };
+		C3A7D5B0210153A000C2BA9E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Util/Constants.h; sourceTree = "<group>"; };
+		C3A7D5B12101CC5900C2BA9E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Classes/VC/BaseViewController.h; sourceTree = "<group>"; };
+		C3A7D5B22101CC5900C2BA9E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/VC/BaseViewController.m; sourceTree = "<group>"; };
+		C3A7D5B42101E2CF00C2BA9E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/VC/MainViewController.h; sourceTree = "<group>"; };
+		C3A7D5B52101E2CF00C2BA9E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/VC/MainViewController.m; sourceTree = "<group>"; };
+		C3A7D5E42102737C00C2BA9E /* CallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallViewController.h; path = Classes/VC/CallViewController.h; sourceTree = "<group>"; };
+		C3A7D5E52102737C00C2BA9E /* CallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallViewController.m; path = Classes/VC/CallViewController.m; sourceTree = "<group>"; };
+		C3A7D5E7210274D100C2BA9E /* CallHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallHistoryViewController.h; path = Classes/VC/CallHistoryViewController.h; sourceTree = "<group>"; };
+		C3A7D5E8210274D100C2BA9E /* CallHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallHistoryViewController.m; path = Classes/VC/CallHistoryViewController.m; sourceTree = "<group>"; };
+		C3A7D5EA210274E900C2BA9E /* TopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TopupViewController.h; path = Classes/VC/TopupViewController.h; sourceTree = "<group>"; };
+		C3A7D5EB210274E900C2BA9E /* TopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TopupViewController.m; path = Classes/VC/TopupViewController.m; sourceTree = "<group>"; };
+		C3A7D5EE210275C800C2BA9E /* CarbonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonKit.h; sourceTree = "<group>"; };
+		C3A7D5EF210275C800C2BA9E /* CarbonSwipeRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonSwipeRefresh.h; sourceTree = "<group>"; };
+		C3A7D5F0210275C800C2BA9E /* CarbonSwipeRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonSwipeRefresh.m; sourceTree = "<group>"; };
+		C3A7D5F1210275C800C2BA9E /* CarbonTabSwipeNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeNavigation.h; sourceTree = "<group>"; };
+		C3A7D5F2210275C800C2BA9E /* CarbonTabSwipeNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeNavigation.m; sourceTree = "<group>"; };
+		C3A7D5F3210275C800C2BA9E /* CarbonTabSwipeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeScrollView.h; sourceTree = "<group>"; };
+		C3A7D5F4210275C800C2BA9E /* CarbonTabSwipeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeScrollView.m; sourceTree = "<group>"; };
+		C3A7D5F5210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonTabSwipeSegmentedControl.h; sourceTree = "<group>"; };
+		C3A7D5F6210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
+		C3A7D5F7210275C800C2BA9E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BD620F213DD33E00964F1E /* Call2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Call2ViewController.h; path = Classes/VC/Call2ViewController.h; sourceTree = "<group>"; };
+		C3BD6210213DD33E00964F1E /* Call2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Call2ViewController.m; path = Classes/VC/Call2ViewController.m; sourceTree = "<group>"; };
+		C3BD6212213DDAB200964F1E /* ResetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResetPasswordViewController.h; path = Classes/VC/ResetPasswordViewController.h; sourceTree = "<group>"; };
+		C3BD6213213DDAB200964F1E /* ResetPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResetPasswordViewController.m; path = Classes/VC/ResetPasswordViewController.m; sourceTree = "<group>"; };
+		C3BD6215213DF1AA00964F1E /* LocalAccessNumberViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocalAccessNumberViewController.h; path = Classes/VC/LocalAccessNumberViewController.h; sourceTree = "<group>"; };
+		C3BD6216213DF1AA00964F1E /* LocalAccessNumberViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LocalAccessNumberViewController.m; path = Classes/VC/LocalAccessNumberViewController.m; sourceTree = "<group>"; };
+		C3BD621A213E0AD800964F1E /* LocalAccessNumberTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocalAccessNumberTableViewCell.h; path = Classes/View/LocalAccessNumberTableViewCell.h; sourceTree = "<group>"; };
+		C3BD621B213E0AD800964F1E /* LocalAccessNumberTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LocalAccessNumberTableViewCell.m; path = Classes/View/LocalAccessNumberTableViewCell.m; sourceTree = "<group>"; };
+		C3C795D12270A149003F4A9A /* CallHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallHistoryTableViewCell.h; path = Classes/View/CallHistoryTableViewCell.h; sourceTree = "<group>"; };
+		C3C795D22270A149003F4A9A /* CallHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallHistoryTableViewCell.m; path = Classes/View/CallHistoryTableViewCell.m; sourceTree = "<group>"; };
+		C3C795D42270A376003F4A9A /* CallRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CallRecord.h; path = Classes/Model/CallRecord.h; sourceTree = "<group>"; };
+		C3C795D52270A376003F4A9A /* CallRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CallRecord.m; path = Classes/Model/CallRecord.m; sourceTree = "<group>"; };
+		C3D8723420EFB47B0059EC78 /* RajaTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RajaTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D8723720EFB47B0059EC78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3D8723820EFB47B0059EC78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3D8723E20EFB47B0059EC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3D8724120EFB47B0059EC78 /* RajaTalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RajaTalk.xcdatamodel; sourceTree = "<group>"; };
+		C3D8724320EFB47E0059EC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D8724620EFB47E0059EC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3D8724820EFB47E0059EC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8724920EFB47E0059EC78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3D8DB0021050D8600C32A08 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Classes/Model/Account.h; sourceTree = "<group>"; };
+		C3D8DB0121050D8600C32A08 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Account.m; path = Classes/Model/Account.m; sourceTree = "<group>"; };
+		C3D8DB0321052CC600C32A08 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		C3D8DB0521052CD300C32A08 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C3D8DB0821055ED700C32A08 /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContactsViewController.h; path = Classes/VC/ContactsViewController.h; sourceTree = "<group>"; };
+		C3D8DB0921055ED700C32A08 /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContactsViewController.m; path = Classes/VC/ContactsViewController.m; sourceTree = "<group>"; };
+		CB60B753890FC6D31AC74ECD /* Pods-RajaTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RajaTalk/Pods-RajaTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		E45792E299B767F533850EB7 /* Pods-RajaTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-RajaTalk/Pods-RajaTalk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D8723120EFB47B0059EC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D8DB0621052CD300C32A08 /* AddressBook.framework in Frameworks */,
+				C3D8DB0421052CC600C32A08 /* AddressBookUI.framework in Frameworks */,
+				07BB3BBD2510EDB7431D202D /* libPods-RajaTalk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA7F698858283CFD827227C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB60B753890FC6D31AC74ECD /* Pods-RajaTalk.debug.xcconfig */,
+				E45792E299B767F533850EB7 /* Pods-RajaTalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C36D52EA21013F9700281A45 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C36D52EC21013FAB00281A45 /* UIColor+RajaTalk.h */,
+				C36D52EB21013FAB00281A45 /* UIColor+RajaTalk.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C36D52F52101516A00281A45 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C3A7D5ED210275C800C2BA9E /* CarbonKit */,
+				C36D52F62101518C00281A45 /* AFNetworking */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C36D52F62101518C00281A45 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C36D52F72101518C00281A45 /* AFNetworking */,
+				C36D530B2101518C00281A45 /* LICENSE */,
+				C36D530C2101518C00281A45 /* README.md */,
+				C36D530D2101518C00281A45 /* UIKit+AFNetworking */,
+			);
+			name = AFNetworking;
+			path = Libraries/AFNetworking;
+			sourceTree = "<group>";
+		};
+		C36D52F72101518C00281A45 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C36D52F82101518C00281A45 /* AFHTTPRequestOperation.h */,
+				C36D52F92101518C00281A45 /* AFHTTPRequestOperation.m */,
+				C36D52FA2101518C00281A45 /* AFHTTPRequestOperationManager.h */,
+				C36D52FB2101518C00281A45 /* AFHTTPRequestOperationManager.m */,
+				C36D52FC2101518C00281A45 /* AFHTTPSessionManager.h */,
+				C36D52FD2101518C00281A45 /* AFHTTPSessionManager.m */,
+				C36D52FE2101518C00281A45 /* AFNetworking.h */,
+				C36D52FF2101518C00281A45 /* AFNetworkReachabilityManager.h */,
+				C36D53002101518C00281A45 /* AFNetworkReachabilityManager.m */,
+				C36D53012101518C00281A45 /* AFSecurityPolicy.h */,
+				C36D53022101518C00281A45 /* AFSecurityPolicy.m */,
+				C36D53032101518C00281A45 /* AFURLConnectionOperation.h */,
+				C36D53042101518C00281A45 /* AFURLConnectionOperation.m */,
+				C36D53052101518C00281A45 /* AFURLRequestSerialization.h */,
+				C36D53062101518C00281A45 /* AFURLRequestSerialization.m */,
+				C36D53072101518C00281A45 /* AFURLResponseSerialization.h */,
+				C36D53082101518C00281A45 /* AFURLResponseSerialization.m */,
+				C36D53092101518C00281A45 /* AFURLSessionManager.h */,
+				C36D530A2101518C00281A45 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		C36D530D2101518C00281A45 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C36D530E2101518C00281A45 /* AFNetworkActivityIndicatorManager.h */,
+				C36D530F2101518C00281A45 /* AFNetworkActivityIndicatorManager.m */,
+				C36D53102101518C00281A45 /* UIActivityIndicatorView+AFNetworking.h */,
+				C36D53112101518C00281A45 /* UIActivityIndicatorView+AFNetworking.m */,
+				C36D53122101518C00281A45 /* UIAlertView+AFNetworking.h */,
+				C36D53132101518C00281A45 /* UIAlertView+AFNetworking.m */,
+				C36D53142101518C00281A45 /* UIButton+AFNetworking.h */,
+				C36D53152101518C00281A45 /* UIButton+AFNetworking.m */,
+				C36D53162101518C00281A45 /* UIImage+AFNetworking.h */,
+				C36D53172101518C00281A45 /* UIImageView+AFNetworking.h */,
+				C36D53182101518C00281A45 /* UIImageView+AFNetworking.m */,
+				C36D53192101518C00281A45 /* UIKit+AFNetworking.h */,
+				C36D531A2101518C00281A45 /* UIProgressView+AFNetworking.h */,
+				C36D531B2101518C00281A45 /* UIProgressView+AFNetworking.m */,
+				C36D531C2101518C00281A45 /* UIRefreshControl+AFNetworking.h */,
+				C36D531D2101518C00281A45 /* UIRefreshControl+AFNetworking.m */,
+				C36D531E2101518C00281A45 /* UIWebView+AFNetworking.h */,
+				C36D531F2101518C00281A45 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		C38C1679210138600050C3F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3A24A732273ADD200D0BBBC /* rajatalk_logo.png */,
+				C36D52D52101393A00281A45 /* icon_call.png */,
+				C36D52DD2101393A00281A45 /* icon_check_mark.png */,
+				C36D52D92101393A00281A45 /* icon_contacts.png */,
+				C36D52D62101393A00281A45 /* icon_delete.png */,
+				C36D52DA2101393A00281A45 /* icon_favourite.png */,
+				C36D52DB2101393A00281A45 /* icon_no_avatar.png */,
+				C36D52D72101393A00281A45 /* icon_password.png */,
+				C36D52DE2101393B00281A45 /* icon_recall.png */,
+				C36D52D82101393A00281A45 /* icon_unfavourite.png */,
+				C36D52DC2101393A00281A45 /* icon_user.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C3A7D5ED210275C800C2BA9E /* CarbonKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3A7D5EE210275C800C2BA9E /* CarbonKit.h */,
+				C3A7D5EF210275C800C2BA9E /* CarbonSwipeRefresh.h */,
+				C3A7D5F0210275C800C2BA9E /* CarbonSwipeRefresh.m */,
+				C3A7D5F1210275C800C2BA9E /* CarbonTabSwipeNavigation.h */,
+				C3A7D5F2210275C800C2BA9E /* CarbonTabSwipeNavigation.m */,
+				C3A7D5F3210275C800C2BA9E /* CarbonTabSwipeScrollView.h */,
+				C3A7D5F4210275C800C2BA9E /* CarbonTabSwipeScrollView.m */,
+				C3A7D5F5210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.h */,
+				C3A7D5F6210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.m */,
+				C3A7D5F7210275C800C2BA9E /* Info.plist */,
+			);
+			name = CarbonKit;
+			path = Libraries/CarbonKit;
+			sourceTree = "<group>";
+		};
+		C3D8722B20EFB47B0059EC78 = {
+			isa = PBXGroup;
+			children = (
+				C3D8723620EFB47B0059EC78 /* RajaTalk */,
+				C3D8723520EFB47B0059EC78 /* Products */,
+				BA7F698858283CFD827227C4 /* Pods */,
+				D28D2E956291C05D397CC875 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D8723520EFB47B0059EC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8723420EFB47B0059EC78 /* RajaTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D8723620EFB47B0059EC78 /* RajaTalk */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD3EE2267F8F600A080A0 /* RajaTalk.entitlements */,
+				C36D52F52101516A00281A45 /* Libraries */,
+				C38C1679210138600050C3F2 /* Resources */,
+				C3D8725020EFD4090059EC78 /* Classes */,
+				C3D8723D20EFB47B0059EC78 /* Main.storyboard */,
+				C3D8724320EFB47E0059EC78 /* Assets.xcassets */,
+				C3D8724520EFB47E0059EC78 /* LaunchScreen.storyboard */,
+				C314DAB1225F8F65008CB313 /* GoogleService-Info.plist */,
+				C3D8724820EFB47E0059EC78 /* Info.plist */,
+				C3D8724920EFB47E0059EC78 /* main.m */,
+				C3D8724020EFB47B0059EC78 /* RajaTalk.xcdatamodeld */,
+			);
+			path = RajaTalk;
+			sourceTree = "<group>";
+		};
+		C3D8725020EFD4090059EC78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8DAFF21050D5F00C32A08 /* Model */,
+				C36D52EA21013F9700281A45 /* Categories */,
+				C3D8725320EFD4310059EC78 /* Util */,
+				C3D8725220EFD4240059EC78 /* View */,
+				C3D8725120EFD41C0059EC78 /* VC */,
+				C3D8723720EFB47B0059EC78 /* AppDelegate.h */,
+				C3D8723820EFB47B0059EC78 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C3D8725120EFD41C0059EC78 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C3A7D5B12101CC5900C2BA9E /* BaseViewController.h */,
+				C3A7D5B22101CC5900C2BA9E /* BaseViewController.m */,
+				C3BD620F213DD33E00964F1E /* Call2ViewController.h */,
+				C3BD6210213DD33E00964F1E /* Call2ViewController.m */,
+				C3A7D5E42102737C00C2BA9E /* CallViewController.h */,
+				C3A7D5E52102737C00C2BA9E /* CallViewController.m */,
+				C3A7D5E7210274D100C2BA9E /* CallHistoryViewController.h */,
+				C3A7D5E8210274D100C2BA9E /* CallHistoryViewController.m */,
+				C3D8DB0821055ED700C32A08 /* ContactsViewController.h */,
+				C3D8DB0921055ED700C32A08 /* ContactsViewController.m */,
+				C3BD6215213DF1AA00964F1E /* LocalAccessNumberViewController.h */,
+				C3BD6216213DF1AA00964F1E /* LocalAccessNumberViewController.m */,
+				C36D52F22101429300281A45 /* LoginViewController.h */,
+				C36D52F12101429300281A45 /* LoginViewController.m */,
+				C3A7D5B42101E2CF00C2BA9E /* MainViewController.h */,
+				C3A7D5B52101E2CF00C2BA9E /* MainViewController.m */,
+				C3BD6212213DDAB200964F1E /* ResetPasswordViewController.h */,
+				C3BD6213213DDAB200964F1E /* ResetPasswordViewController.m */,
+				C36D52EE2101426C00281A45 /* SignUpViewController.h */,
+				C36D52EF2101426C00281A45 /* SignUpViewController.m */,
+				C3A7D5EA210274E900C2BA9E /* TopupViewController.h */,
+				C3A7D5EB210274E900C2BA9E /* TopupViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		C3D8725220EFD4240059EC78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3C795D12270A149003F4A9A /* CallHistoryTableViewCell.h */,
+				C3C795D22270A149003F4A9A /* CallHistoryTableViewCell.m */,
+				C3BD621A213E0AD800964F1E /* LocalAccessNumberTableViewCell.h */,
+				C3BD621B213E0AD800964F1E /* LocalAccessNumberTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C3D8725320EFD4310059EC78 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C38C16762101355F0050C3F2 /* Util.h */,
+				C38C16772101355F0050C3F2 /* Util.m */,
+				C3A7D5B0210153A000C2BA9E /* Constants.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		C3D8DAFF21050D5F00C32A08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8DB0021050D8600C32A08 /* Account.h */,
+				C3D8DB0121050D8600C32A08 /* Account.m */,
+				C3C795D42270A376003F4A9A /* CallRecord.h */,
+				C3C795D52270A376003F4A9A /* CallRecord.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D28D2E956291C05D397CC875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8DB0521052CD300C32A08 /* AddressBook.framework */,
+				C3D8DB0321052CC600C32A08 /* AddressBookUI.framework */,
+				414848D188112C0FBE50095A /* libPods-RajaTalk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D8723320EFB47B0059EC78 /* RajaTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D8724D20EFB47E0059EC78 /* Build configuration list for PBXNativeTarget "RajaTalk" */;
+			buildPhases = (
+				DA1CDA0AB2507A22C4DC6FB8 /* [CP] Check Pods Manifest.lock */,
+				C3D8723020EFB47B0059EC78 /* Sources */,
+				C3D8723120EFB47B0059EC78 /* Frameworks */,
+				C3D8723220EFB47B0059EC78 /* Resources */,
+				C14B5866AA9AFBE3F70DF897 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RajaTalk;
+			productName = Rabbtel;
+			productReference = C3D8723420EFB47B0059EC78 /* RajaTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D8722C20EFB47B0059EC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Teleclub;
+				TargetAttributes = {
+					C3D8723320EFB47B0059EC78 = {
+						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C3D8722F20EFB47B0059EC78 /* Build configuration list for PBXProject "RajaTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D8722B20EFB47B0059EC78;
+			productRefGroup = C3D8723520EFB47B0059EC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D8723320EFB47B0059EC78 /* RajaTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D8723220EFB47B0059EC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C314DAB2225F8F66008CB313 /* GoogleService-Info.plist in Resources */,
+				C3A7D5FC210275C800C2BA9E /* Info.plist in Resources */,
+				C36D52E02101393B00281A45 /* icon_delete.png in Resources */,
+				C36D52DF2101393B00281A45 /* icon_call.png in Resources */,
+				C36D52E72101393B00281A45 /* icon_check_mark.png in Resources */,
+				C36D52E42101393B00281A45 /* icon_favourite.png in Resources */,
+				C3A24A742273ADD200D0BBBC /* rajatalk_logo.png in Resources */,
+				C3D8724720EFB47E0059EC78 /* LaunchScreen.storyboard in Resources */,
+				C36D52E32101393B00281A45 /* icon_contacts.png in Resources */,
+				C36D52E82101393B00281A45 /* icon_recall.png in Resources */,
+				C36D52E12101393B00281A45 /* icon_password.png in Resources */,
+				C3D8724420EFB47E0059EC78 /* Assets.xcassets in Resources */,
+				C3D8723F20EFB47B0059EC78 /* Main.storyboard in Resources */,
+				C36D53292101518D00281A45 /* LICENSE in Resources */,
+				C36D52E52101393B00281A45 /* icon_no_avatar.png in Resources */,
+				C36D532A2101518D00281A45 /* README.md in Resources */,
+				C36D52E22101393B00281A45 /* icon_unfavourite.png in Resources */,
+				C36D52E62101393B00281A45 /* icon_user.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C14B5866AA9AFBE3F70DF897 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RajaTalk/Pods-RajaTalk-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RajaTalk/Pods-RajaTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA1CDA0AB2507A22C4DC6FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RajaTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D8723020EFB47B0059EC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BD621C213E0AD800964F1E /* LocalAccessNumberTableViewCell.m in Sources */,
+				C36D53312101518D00281A45 /* UIRefreshControl+AFNetworking.m in Sources */,
+				C36D53252101518D00281A45 /* AFURLConnectionOperation.m in Sources */,
+				C38C16782101355F0050C3F2 /* Util.m in Sources */,
+				C3A7D5E9210274D100C2BA9E /* CallHistoryViewController.m in Sources */,
+				C36D53302101518D00281A45 /* UIProgressView+AFNetworking.m in Sources */,
+				C3BD6214213DDAB200964F1E /* ResetPasswordViewController.m in Sources */,
+				C3D8DB0221050D8600C32A08 /* Account.m in Sources */,
+				C3D8724220EFB47B0059EC78 /* RajaTalk.xcdatamodeld in Sources */,
+				C36D532D2101518D00281A45 /* UIAlertView+AFNetworking.m in Sources */,
+				C3D8724A20EFB47E0059EC78 /* main.m in Sources */,
+				C36D53272101518D00281A45 /* AFURLResponseSerialization.m in Sources */,
+				C36D532E2101518D00281A45 /* UIButton+AFNetworking.m in Sources */,
+				C36D52ED21013FAB00281A45 /* UIColor+RajaTalk.m in Sources */,
+				C3A7D5EC210274E900C2BA9E /* TopupViewController.m in Sources */,
+				C3A7D5F9210275C800C2BA9E /* CarbonTabSwipeNavigation.m in Sources */,
+				C36D532C2101518D00281A45 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				C3A7D5FB210275C800C2BA9E /* CarbonTabSwipeSegmentedControl.m in Sources */,
+				C3A7D5F8210275C800C2BA9E /* CarbonSwipeRefresh.m in Sources */,
+				C3D8DB0A21055ED700C32A08 /* ContactsViewController.m in Sources */,
+				C3A7D5B32101CC5900C2BA9E /* BaseViewController.m in Sources */,
+				C36D53262101518D00281A45 /* AFURLRequestSerialization.m in Sources */,
+				C3C795D32270A149003F4A9A /* CallHistoryTableViewCell.m in Sources */,
+				C36D532B2101518D00281A45 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				C36D53242101518D00281A45 /* AFSecurityPolicy.m in Sources */,
+				C3A7D5FA210275C800C2BA9E /* CarbonTabSwipeScrollView.m in Sources */,
+				C36D53202101518D00281A45 /* AFHTTPRequestOperation.m in Sources */,
+				C36D53282101518D00281A45 /* AFURLSessionManager.m in Sources */,
+				C3A7D5B62101E2CF00C2BA9E /* MainViewController.m in Sources */,
+				C36D52F32101429300281A45 /* LoginViewController.m in Sources */,
+				C3C795D62270A376003F4A9A /* CallRecord.m in Sources */,
+				C36D52F02101426C00281A45 /* SignUpViewController.m in Sources */,
+				C36D53222101518D00281A45 /* AFHTTPSessionManager.m in Sources */,
+				C3A7D5E62102737C00C2BA9E /* CallViewController.m in Sources */,
+				C3BD6217213DF1AA00964F1E /* LocalAccessNumberViewController.m in Sources */,
+				C3D8723920EFB47B0059EC78 /* AppDelegate.m in Sources */,
+				C36D53322101518D00281A45 /* UIWebView+AFNetworking.m in Sources */,
+				C36D53232101518D00281A45 /* AFNetworkReachabilityManager.m in Sources */,
+				C3BD6211213DD33E00964F1E /* Call2ViewController.m in Sources */,
+				C36D532F2101518D00281A45 /* UIImageView+AFNetworking.m in Sources */,
+				C36D53212101518D00281A45 /* AFHTTPRequestOperationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3D8723D20EFB47B0059EC78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D8723E20EFB47B0059EC78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D8724520EFB47E0059EC78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D8724620EFB47E0059EC78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3D8724B20EFB47E0059EC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3D8724C20EFB47E0059EC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3D8724E20EFB47E0059EC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB60B753890FC6D31AC74ECD /* Pods-RajaTalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RajaTalk/RajaTalk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 884D622U79;
+				INFOPLIST_FILE = "$(SRCROOT)/RajaTalk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleclub.rajatalk;
+				PRODUCT_MODULE_NAME = RajaTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C3D8724F20EFB47E0059EC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45792E299B767F533850EB7 /* Pods-RajaTalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RajaTalk/RajaTalk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 884D622U79;
+				INFOPLIST_FILE = "$(SRCROOT)/RajaTalk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.teleclub.rajatalk;
+				PRODUCT_MODULE_NAME = RajaTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D8722F20EFB47B0059EC78 /* Build configuration list for PBXProject "RajaTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D8724B20EFB47E0059EC78 /* Debug */,
+				C3D8724C20EFB47E0059EC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D8724D20EFB47E0059EC78 /* Build configuration list for PBXNativeTarget "RajaTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D8724E20EFB47E0059EC78 /* Debug */,
+				C3D8724F20EFB47E0059EC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3D8724020EFB47B0059EC78 /* RajaTalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3D8724120EFB47B0059EC78 /* RajaTalk.xcdatamodel */,
+			);
+			currentVersion = C3D8724120EFB47B0059EC78 /* RajaTalk.xcdatamodel */;
+			path = RajaTalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3D8722C20EFB47B0059EC78 /* Project object */;
+}
