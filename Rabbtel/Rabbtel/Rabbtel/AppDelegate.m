@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "UIColor+Rabbtel.h"
+//#import "UIColor+Rabbtel.h"
 #import <Firebase.h>
+#import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate () <UNUserNotificationCenterDelegate, FIRMessagingDelegate>
 
@@ -21,7 +22,7 @@ NSString *const kGCMMessageIDKey = @"gcm.message_id";
     // Override point for customization after application launch.
     UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
     if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
-        statusBar.backgroundColor = [UIColor appColor];
+       // statusBar.backgroundColor = [UIColor appColor];
     }
     
     [FIRApp configure];
