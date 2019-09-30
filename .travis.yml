@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode11.0
+xcode_project: ./Rajatalk/RajaTalk/RajaTalk.xcodeproj
+xcode_project: ./Rabbtel/Rabbtel/Rabbtel.xcodeproj
+xcode_project: ./TeleSMS/RajaTalk/RajaTalk.xcodeproj
+osx_image: xcode11
+xcode_destination: platform=iOS Simulator,OS=12.4,name=iPhone X
